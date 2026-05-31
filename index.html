@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zihan Wang</title>
+    <meta
+      name="description"
+      content="Zihan Wang is a Ph.D. student in Mathematics at NYU Courant working on LLM theory, optimization, privacy, and AI for math."
+    >
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero" id="top">
+        <div class="intro">
+          <p class="eyebrow">Courant Institute of Mathematical Sciences, NYU</p>
+          <h1>Zihan Wang</h1>
+          <p>
+            I am a Ph.D. student in Mathematics at the Courant Institute of
+            Mathematical Sciences, New York University, advised by Qi Lei.
+            My research studies large language models and deep learning from a
+            theoretical perspective, with recent focus on chain-of-thought
+            reasoning, self-improving generation models, optimization dynamics,
+            and privacy in machine learning. I am also interested in AI for
+            mathematics.
+          </p>
+          <nav class="links" aria-label="Primary links">
+            <a href="mailto:zw3508@nyu.edu">Email</a>
+            <a href="assets/CV_2026.pdf">CV</a>
+            <a href="https://scholar.google.com/citations?user=ZBF2zKMAAAAJ&hl=en">Google Scholar</a>
+          </nav>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/research-visual.png" alt="Abstract mathematical network visual">
+        </figure>
+      </header>
+
+      <section class="section" aria-labelledby="news-heading">
+        <h2 id="news-heading">News</h2>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-02">February 2026</time>
+            <span>
+              <a href="https://arxiv.org/abs/2603.00306">When does Chain-of-Thought Help: A Markovian Perspective</a>
+              was posted on arXiv.
+            </span>
+          </li>
+          <li>
+            <time datetime="2025">2025</time>
+            <span>
+              <a href="https://proceedings.mlr.press/v258/liu25b.html">Data Reconstruction Attacks and Defenses: A Systematic Evaluation</a>
+              appeared at AISTATS 2025.
+            </span>
+          </li>
+          <li>
+            <time datetime="2024">2024</time>
+            <span>
+              <a href="https://arxiv.org/abs/2305.16038">Implicit bias of SGD in L2-regularized linear DNNs</a>
+              was selected as an ICLR 2024 spotlight.
+            </span>
+          </li>
+          <li>
+            <time datetime="2023">2023</time>
+            <span>
+              <a href="https://proceedings.mlr.press/v206/wang23g.html">Reconstructing Training Data from Model Gradient, Provably</a>
+              appeared at AISTATS 2023.
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <p class="section-lead">
+          I work on theoretical foundations for modern learning systems: when
+          reasoning traces help, how models can improve through closed-loop
+          training, why optimization dynamics favor certain structures, and how
+          gradients can leak private training data.
+        </p>
+        <div class="project-list">
+          <article class="project">
+            <div class="project-mark mark-cot" aria-hidden="true">CoT</div>
+            <div>
+              <h3>Understanding chain-of-thought from a Markovian perspective</h3>
+              <p>
+                Models multi-step reasoning traces as a Markov process and
+                studies transition alignment as a structural condition under
+                which chain-of-thought reduces inference-time sampling cost.
+              </p>
+              <p class="meta">Manuscript under review</p>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-mark mark-loop" aria-hidden="true">loop</div>
+            <div>
+              <h3>Self-improving generation models via verifier-guided post-training</h3>
+              <p>
+                Develops closed-loop training with model-generated data,
+                verifier-guided selection, and weighting, with experiments
+                comparing off-policy and on-policy self-improvement updates.
+              </p>
+              <p class="meta">In preparation</p>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-mark mark-moe" aria-hidden="true">MoE</div>
+            <div>
+              <h3>Two-timescale optimization theory for mixture-of-experts</h3>
+              <p>
+                Studies softmax-router mixture-of-experts training via
+                martingale arguments and dynamical-system style analysis of
+                inner-loop and outer-loop convergence.
+              </p>
+              <p class="meta">In preparation</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Selected Publications</h2>
+        <p class="note">An asterisk denotes alphabetical author order.</p>
+        <div class="publication-list">
+          <article class="publication">
+            <div class="pub-thumb thumb-cot" aria-hidden="true"></div>
+            <div class="pub-body">
+              <h3>
+                <a href="https://arxiv.org/abs/2603.00306">When does Chain-of-Thought Help: A Markovian Perspective</a>
+              </h3>
+              <p class="authors"><strong>Zihan Wang</strong>, Yijun Dong, Qi Lei</p>
+              <p class="venue">arXiv, 2026</p>
+              <p>
+                Identifies transition alignment as a key determinant of when
+                chain-of-thought prompting improves sample efficiency, and
+                validates the theory with controlled synthetic benchmarks.
+              </p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2603.00306">arXiv</a>
+                <a href="https://arxiv.org/pdf/2603.00306">paper</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-thumb thumb-privacy" aria-hidden="true"></div>
+            <div class="pub-body">
+              <h3>
+                <a href="https://proceedings.mlr.press/v258/liu25b.html">Data Reconstruction Attacks and Defenses: A Systematic Evaluation</a>
+              </h3>
+              <p class="authors">Sheng Liu*, <strong>Zihan Wang*</strong>, Yuxiao Chen, Qi Lei</p>
+              <p class="venue">AISTATS, 2025</p>
+              <p>
+                Recasts data reconstruction as an inverse problem, derives
+                matching reconstruction-error bounds for two-layer networks,
+                and proposes a utility-matched evaluation protocol.
+              </p>
+              <p class="pub-links">
+                <a href="https://proceedings.mlr.press/v258/liu25b.html">PMLR</a>
+                <a href="https://arxiv.org/abs/2402.09478">arXiv</a>
+                <a href="https://raw.githubusercontent.com/mlresearch/v258/main/assets/liu25b/liu25b.pdf">paper</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-thumb thumb-rank" aria-hidden="true"></div>
+            <div class="pub-body">
+              <h3>
+                <a href="https://arxiv.org/abs/2305.16038">Implicit bias of SGD in L2-regularized linear DNNs: One-way jumps from high to low rank</a>
+              </h3>
+              <p class="authors"><strong>Zihan Wang</strong>, Arthur Jacot</p>
+              <p class="venue">ICLR, 2024 Spotlight</p>
+              <p>
+                Shows how stochastic gradient dynamics can move from
+                higher-rank minima to lower-rank minima in regularized deep
+                linear networks, while reverse jumps have probability zero.
+              </p>
+              <p class="pub-links">
+                <a href="https://openreview.net/forum?id=P1aobHnjjj">OpenReview</a>
+                <a href="https://arxiv.org/abs/2305.16038">arXiv</a>
+                <a href="https://arxiv.org/pdf/2305.16038">paper</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-thumb thumb-gradient" aria-hidden="true"></div>
+            <div class="pub-body">
+              <h3>
+                <a href="https://proceedings.mlr.press/v206/wang23g.html">Reconstructing Training Data from Model Gradient, Provably</a>
+              </h3>
+              <p class="authors"><strong>Zihan Wang</strong>, Jason D. Lee, Qi Lei</p>
+              <p class="venue">AISTATS, 2023</p>
+              <p>
+                Proves that a single model-gradient query at random
+                initialization can identify training samples under broad neural
+                network assumptions, with an efficient tensor-decomposition
+                reconstruction algorithm.
+              </p>
+              <p class="pub-links">
+                <a href="https://proceedings.mlr.press/v206/wang23g.html">PMLR</a>
+                <a href="https://arxiv.org/abs/2212.03714">arXiv</a>
+                <a href="https://proceedings.mlr.press/v206/wang23g/wang23g.pdf">paper</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section two-column" aria-labelledby="more-heading">
+        <div>
+          <h2 id="more-heading">Talks</h2>
+          <ul class="compact-list">
+            <li>
+              <span class="meta">June 2023</span>
+              Reconstructing Training Data from Model Gradient, Provably.
+              Machine learning reading group, University of California Berkeley.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Education</h2>
+          <ul class="compact-list">
+            <li>
+              <span class="meta">2024 - present</span>
+              Ph.D. in Mathematics, New York University. Moses A. Greenfield
+              Research Prize.
+            </li>
+            <li>
+              <span class="meta">2022 - 2024</span>
+              M.S. in Mathematics, New York University. Glenn Y. Louie Endowed
+              Fellowship.
+            </li>
+            <li>
+              <span class="meta">2018 - 2022</span>
+              B.S. in Statistics, Peking University.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="service-heading">
+        <h2 id="service-heading">Service</h2>
+        <p>
+          Reviewer for ICLR, ICML, NeurIPS, and AISTATS.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p>
+          Last updated May 2026. Style inspired by clean academic homepages such
+          as Mengyi Shan's and Jon Barron's.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
