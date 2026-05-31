@@ -58,13 +58,6 @@ a:focus-visible {
   padding: 22px 0 36px;
 }
 
-.eyebrow {
-  margin: 0 0 8px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
 h1,
 h2,
 h3,
@@ -91,6 +84,10 @@ h3 {
   margin-bottom: 5px;
   font-size: 1.05rem;
   line-height: 1.34;
+}
+
+.section h3 {
+  margin: 16px 0 6px;
 }
 
 .intro p {
@@ -143,7 +140,8 @@ h3 {
 }
 
 .news-list,
-.compact-list {
+.compact-list,
+.misc-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -223,6 +221,17 @@ time,
 
 .compact-list li {
   grid-template-columns: 110px minmax(0, 1fr);
+}
+
+.misc-list {
+  display: grid;
+  gap: 9px;
+  list-style: decimal;
+  padding-left: 22px;
+}
+
+.misc-list li {
+  padding-left: 5px;
 }
 
 .footer {
